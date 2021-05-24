@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-feign-client
+server:
+  port: 8084
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8081/eureka}
+
+#feign:
+#  client:
+#    config:
+#      default.connectTimeout: 160000000
+#      readTimeout: 160000000
